@@ -34,3 +34,14 @@ window.addEventListener("DOMContentLoaded", function () {
   } 
 
 }); 
+document.getElementById("clear-btn").addEventListener("click", function () { 
+
+  localStorage.removeItem("visitorName"); 
+
+  localStorage.removeItem("visitorTopic"); 
+
+  form.reset(); 
+
+  alert("Saved data cleared."); 
+
+}); 
